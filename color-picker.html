@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Paragraph Color Using Input Color</title>
+</head>
+<body>
+    <input type="color" id="colorPicker">
+    <p id="text">This is some text.</p>
+
+    <script>
+        var colorPicker = document.getElementById("colorPicker");
+        var textElement = document.getElementById("text");
+
+        colorPicker.addEventListener("input", function() {
+            var selectedColor = colorPicker.value;
+            textElement.style.color = selectedColor;
+        });
+    </script>
+</body>
+</html>
